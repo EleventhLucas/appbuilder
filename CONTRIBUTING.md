@@ -12,7 +12,7 @@ Use common sense, be nice, and keep changes easy to understand.
 
 ## License
 
-AppBuilder is released under [The Unlicense](LICENSE.md). By contributing, you agree your contribution is provided under those same terms.
+AppBuilder is released under [The Unlicense](LICENSE). By contributing, you agree your contribution is provided under those same terms.
 
 There is no CLA, copyright assignment, or DCO sign-off.
 
