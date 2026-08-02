@@ -1,0 +1,49 @@
+node_modules/
+dist/
+release/
+test-results/
+playwright-report/
+resources/codex/
+
+# Local configuration and agent state
+.agents/
+.codex/
+.claude/
+.cursor/
+.idea/
+.env
+.env.*
+!.env.example
+.npmrc
+
+# Credentials and private signing material
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.pem
+*.crt
+*.cer
+*.der
+*-private.pem
+private-*.pem
+id_rsa
+id_ed25519
+
+# Diagnostics, logs, and temporary backups
+AppBuilder-Diagnostics-*.zip
+*Diagnostics*.zip
+*diagnostics*.zip
+*.log
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*~
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
