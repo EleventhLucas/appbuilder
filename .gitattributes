@@ -1,2 +1,6 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# AppBuilder text files are finalized with Windows-style line endings.
+* text eol=crlf
+*.png binary
+*.ico binary
+*.exe binary
+*.woff2 binary

@@ -1,0 +1,46 @@
+appId: com.eleventhlucas.appbuilder
+productName: AppBuilder
+artifactName: "${productName}-${version}-${os}-${arch}.${ext}"
+directories:
+  output: release
+  buildResources: resources/icons
+files:
+  - dist/**/*
+  - "!dist/**/*.map"
+  - package.json
+extraResources:
+  - from: resources/icons/app-icon.png
+    to: icons/app-icon.png
+  - from: resources/codex
+    to: codex
+  - from: LICENSE.md
+    to: notices/AppBuilder-LICENSE.md
+  - from: PRIVACY.md
+    to: notices/PRIVACY.md
+  - from: THIRD_PARTY_NOTICES.md
+    to: notices/THIRD_PARTY_NOTICES.md
+asar: true
+win:
+  icon: app-icon.ico
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: zip
+      arch: [x64]
+nsis:
+  installerIcon: app-icon.ico
+  uninstallerIcon: app-icon.ico
+  installerHeaderIcon: app-icon.ico
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+linux:
+  icon: linux
+  target:
+    - target: AppImage
+      arch: [x64]
+    - target: deb
+      arch: [x64]
+  category: Development
+  synopsis: Desktop project runner and Codex client

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="AppBuilder is a focused desktop workspace for local projects and Codex conversations." />
+    <title>AppBuilder</title>
+    <link rel="icon" href="assets/app-icon.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="glow glow-one" aria-hidden="true"></div>
+    <div class="glow glow-two" aria-hidden="true"></div>
+
+    <header class="site-header wrap">
+      <a class="brand" href="#top" aria-label="AppBuilder home"><img src="assets/app-icon.png" alt="" width="38" height="38" /></a>
+      <div class="header-message"><strong>AppBuilder</strong><span>The app to make vibe coding even easier.</span></div>
+      <nav aria-label="Main navigation"><a class="github-link" href="https://github.com/EleventhLucas/appbuilder" aria-label="View AppBuilder on GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.5c-2.23.49-2.7-.95-2.7-.95-.36-.93-.89-1.18-.89-1.18-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.51.28-.87.51-1.07-1.78-.2-3.65-.88-3.65-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.7 7.7 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.14 0 3.08-1.88 3.75-3.66 3.94.29.25.54.72.54 1.45v2.14c0 .21.15.46.55.38A8 8 0 0 0 8 0Z" /></svg></a><a class="download-button" href="https://github.com/EleventhLucas/appbuilder/releases">Download</a></nav>
+    </header>
+
+    <main id="top" class="wrap showcase">
+      <div class="product-frame" aria-label="A scripted AppBuilder interface demo">
+        <div class="window-bar"><span></span><span></span><span></span><p>AppBuilder</p></div>
+        <div class="app-preview">
+          <aside class="preview-sidebar">
+            <p>PROJECTS</p>
+            <div class="project active"><i></i><span data-demo-project>New project</span><b>•••</b></div>
+          </aside>
+          <div class="preview-workspace">
+            <div class="preview-topbar">
+              <div><strong data-demo-title>New project</strong><small data-demo-path>Choose a project to begin</small></div>
+              <div class="preview-actions"><div class="status-chip"><span class="connection-dot"></span><span>GPT-5.5 · medium</span><span class="usage-battery" aria-label="67 percent remaining"><i></i></span><b>67%</b></div></div>
+            </div>
+            <div class="conversation" data-demo-conversation aria-live="polite">
+              <div class="blank-state"><p>Start a conversation when you are ready.</p></div>
+            </div>
+            <div class="composer" aria-label="Message composer preview"><span class="demo-input" data-demo-input>Ask Codex to work on this project…</span><span class="send-button" data-demo-send aria-hidden="true">↑</span></div><div class="run-bar"><span class="run-button is-hidden" data-demo-run><i></i><span>Run</span></span><span class="run-state" data-demo-run-state>Ready to run</span></div>
+          </div>
+        </div>
+        <div class="browser-modal is-hidden" data-browser-modal aria-hidden="true">
+          <div class="browser-window">
+            <div class="browser-bar"><span class="browser-close" data-demo-browser-close></span><span></span><span></span><div>localhost:5173</div></div>
+            <div class="todo-app" data-demo-todo-app><header><span class="todo-dot"></span><b>today</b><small>Tuesday, 10:24 AM</small><span class="theme-toggle" data-demo-theme-toggle aria-label="Dark theme toggle"><i></i></span></header><main><h2>Things to do</h2><p>A small list for a calmer day.</p><div class="todo-item checked"><i>✓</i> Sketch AppBuilder demo</div><div class="todo-item"><i></i> Make the first landing page</div><div class="todo-item"><i></i> Take the next small step</div><div class="todo-input">+ Add a task</div></main></div>
+          </div>
+        </div>
+        <div class="demo-cursor cursor-hidden" data-demo-cursor aria-hidden="true"><svg viewBox="0 0 24 30" role="presentation"><path d="M3 1.5 20.5 18l-8.5 1.3L8.5 28z" /></svg></div>
+      </div>
+      <div class="demo-controls" aria-label="Demo steps"><button class="demo-play" type="button" data-demo-play aria-label="Play demo">▶</button><div class="step-controls is-hidden" data-demo-steps><button type="button" data-demo-prev aria-label="Previous demo step" disabled>←</button><span data-demo-count>1 / 6</span><button type="button" data-demo-next aria-label="Next demo step">→</button></div></div>
+    </main>
+  </body>
+</html>
