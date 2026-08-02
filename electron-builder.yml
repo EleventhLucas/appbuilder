@@ -13,8 +13,8 @@ extraResources:
     to: icons/app-icon.png
   - from: resources/codex
     to: codex
-  - from: LICENSE.md
-    to: notices/AppBuilder-LICENSE.md
+  - from: LICENSE
+    to: notices/LICENSE
   - from: PRIVACY.md
     to: notices/PRIVACY.md
   - from: THIRD_PARTY_NOTICES.md
@@ -37,6 +37,7 @@ nsis:
   createStartMenuShortcut: true
 linux:
   icon: linux
+  maintainer: AppBuilder contributors
   target:
     - target: AppImage
       arch: [x64]
